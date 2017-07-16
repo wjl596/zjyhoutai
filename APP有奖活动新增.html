@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>筑家易后台管理系统</title>
+<meta name="keywords" content="筑家易后台管理系统">
+<meta name="description" content="筑家易后台管理系统">
+<link rel="shortcut icon" href="favicon.ico">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/animate.min.css" rel="stylesheet">
+<link href="css/plugins/summernote/summernote.css" rel="stylesheet">
+<link href="css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet">
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5><a href="APP有奖活动.html"><i class="fa fa-angle-left"></i> 返回</a></h5>
+                </div>
+                <div class="ibox-content">
+                    <form method="get" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label"><span class="text-danger">*&nbsp;&nbsp;</span>城市：</label>
+                            <div class="col-sm-2">
+                                <select class="form-control" name="account">
+                                    <option>请选择</option>
+                                    <option value="1101">杭州</option>
+                                    <option value="1001">南京</option>
+                                    <option value="0601">沈阳</option>
+                                    <option value="1601">郑州</option>
+                                    <option value="09">上海</option>
+                                    <option value="22">重庆</option>
+                                    <option value="01">北京</option>
+                                    <option value="02">天津</option>
+                                    <option value="1903">深圳</option>
+                                    <option value="1901">广州</option>
+                                    <option value="1701">武汉</option>
+                                    <option value="1401">南昌</option>
+                                    <option value="0401">太原</option>
+                                    <option value="2401">贵阳</option>
+                                    <option value="2301">成都</option>
+                                    <option value="1301">福州</option>
+                                    <option value="1201">合肥</option>
+                                    <option value="1501">济南</option>
+                                    <option value="0301">石家庄</option>
+                                    <option value="2701">西安</option>
+                                    <option value="2501">昆明</option>
+                                    <option value="2001">南宁</option>
+                                    <option value="2101">海口</option>
+                                    <option value="1801">长沙</option>
+                                    <option value="0801">哈尔滨</option>
+                                    <option value="0701">长春</option>
+                                    <option value="1005">苏州</option>
+                                    <option value="1102">宁波</option>
+                                    <option value="1103">温州</option>
+                                    <option value="1107">金华</option>
+                                    <option value="1110">台州</option>
+                                    <option value="1106">绍兴</option>
+                                    <option value="1105">湖州</option>
+                                    <option value="1111">丽水</option>
+                                    <option value="1104">嘉兴</option>
+                                    <option value="1108">衢州</option>
+                                    <option value="1002">无锡</option>
+                                    <option value="1502">青岛</option>
+                                    <option value="1302">厦门</option>
+                                    <option value="1004">常州</option>
+                                    <option value="1008">淮安</option>
+                                    <option value="1007">连云港</option>
+                                    <option value="1205">马鞍山</option>
+                                    <option value="1006">南通</option>
+                                    <option value="1012">泰州</option>
+                                    <option value="1013">宿迁</option>
+                                    <option value="1003">徐州</option>
+                                    <option value="1009">盐城</option>
+                                    <option value="1010">扬州</option>
+                                    <option value="1011">镇江</option>
+                                    <option value="0602">大连</option>
+                                    <option value="2102">三亚</option>
+                                    <option value="1602">开封</option>
+                                    <option value="1603">洛阳</option>
+                                    <option value="0302">唐山</option>
+                                    <option value="1305">泉州</option>
+                                    <option value="1904">珠海</option>
+                                    <option value="1906">佛山</option>
+                                    <option value="1918">中山</option>
+                                    <option value="3001">银川</option>
+                                    <option value="1917">东莞</option>
+                                    <option value="1911">惠州</option>
+                                    <option value="1704">宜昌</option>
+                                    <option value="3101">乌鲁木齐</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label"><span class="text-danger">*&nbsp;&nbsp;</span>活动名称：</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="keyword" value="" name="keyword" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label"><span class="text-danger">*&nbsp;&nbsp;</span>活动说明：</label>
+                            <div class="col-sm-10">
+                                <div class="summernote">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label"><span class="text-danger">*&nbsp;&nbsp;</span>推荐规则：</label>
+                            <div class="col-sm-10">
+                                <div class="col-sm-10" style="margin-bottom:15px;">
+                                    <label class="col-sm-2 control-label"></span>推荐数量达</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" id="keyword" value="" name="keyword" placeholder="" class="form-control">
+                                    </div>
+                                    <label class="col-sm-2 control-label"></span>奖励</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" id="keyword" value="" name="keyword" placeholder="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-10">
+                                    <label class="col-sm-2 control-label"></span>推荐数量达</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" id="keyword" value="" name="keyword" placeholder="" class="form-control">
+                                    </div>
+                                    <label class="col-sm-2 control-label"></span>奖励</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" id="keyword" value="" name="keyword" placeholder="" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label"><span class="text-danger">*&nbsp;&nbsp;</span>开始日期：</label>
+                            <div class="col-sm-10">
+                                <input id="hello" class="laydate-icon form-control layer-date">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <button class="btn btn-primary" type="submit">保存</button>
+                                <button class="btn btn-primary" type="submit">返回</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/content.min.js"></script>
+<script src="js/plugins/layer/laydate/laydate.js" type="text/javascript"></script>
+<script type="text/javascript">
+        var BASE_URL = 'js/plugins/webuploader/index.html';
+    </script>
+<script src="js/plugins/summernote/summernote.min.js"></script>
+<script src="js/plugins/summernote/summernote-zh-CN.js"></script>
+<!-- 自定义js -->
+<script>
+    $(document).ready(function(){
+        $(".summernote").summernote({lang:"zh-CN"})
+    });
+    var edit=function(){
+        $("#eg").addClass("no-padding");
+        $(".click2edit").summernote({lang:"zh-CN",focus:true})
+    };
+    var save=function(){
+        $("#eg").removeClass("no-padding");
+        var aHTML=$(".click2edit").code();
+        $(".click2edit").destroy()
+    };
+    $(function(){
+        // layer-date 日期插件全局配置
+        $(".layer-date").on("click", function(){
+            laydate({
+                istime:true,
+                format:"YYYY-MM-DD hh:mm:ss"
+            });
+        });
+    });
+</script>
+</body>
+</html>

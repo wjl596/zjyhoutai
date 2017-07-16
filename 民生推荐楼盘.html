@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>筑家易后台管理系统</title>
+    <meta name="keywords" content="筑家易后台管理系统">
+    <meta name="description" content="筑家易后台管理系统">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">  
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5><a href="">民生好房</a> > 推荐楼盘</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="row form-group form-horizontal form-style">
+                        <div class="col-sm-2" style="padding-left: 0">
+                            <select class="form-control" name="account">
+                                <option value="1">民生推荐：已推荐</option>
+                                <option value="2">民生推荐：未推荐</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2" style="padding-left: 0">
+                            <select class="form-control" name="account">
+                                <option>合作类型：全部</option>
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                                <option value="d">D</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2" style="padding-left: 0">
+                            <select class="form-control" name="account">
+                                <option>合作类型：全部</option>
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                                <option value="d">D</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2" style="padding-left: 0">
+                            <select class="form-control" name="account">
+                                <option>首页推荐：全部</option>
+                                <option value="t">首页推荐：是</option>
+                                <option value="f">首页推荐：否</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-1" style="padding-left:0;"><input type="text" id="keyword" value="" name="keyword" placeholder="楼盘名称" class="form-control"></div>
+                        <div class="col-sm-1" style="padding:0;"><button type="button" class="btn btn-primary">查询</button></div>
+                    </div>
+                    <div class="example-wrap">
+                        <div class="example">
+                            <div class="btn-group hidden-xs" id="exampleTableEventsToolbar" role="group">
+                                <button type="button" class="btn btn-outline btn-default">
+                                    <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline btn-default">
+                                    <i class="glyphicon glyphicon-heart" aria-hidden="true"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline btn-default">
+                                    <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <table id="exampleTableEvents" data-height="400" data-mobile-responsive="true" class="">
+                                <thead>
+                                    <tr>
+                                        <th data-field="state" data-checkbox="true"></th>
+                                        <th>楼盘名称</th>
+                                        <th>楼盘地址</th>
+                                        <th>合作类型</th>
+                                        <th>民生楼盘编号</th>
+                                        <th>特惠活动（进行中）</th>
+                                        <th>首页推荐</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr align="center">
+                                        <td></td>
+                                        <td>东方郡</td>
+                                        <td>杭州市西湖区文一路99号</td>
+                                        <td>A</td>
+                                        <td>--</td>
+                                        <td>--</td>
+                                        <td>否</td>
+                                        <td>
+                                            <a href="民生楼盘属性.html" class="btn btn-white btn-bitbucket">合作属性维护</a>
+                                            <a href="" class="btn btn-white btn-bitbucket">首页推荐</a>
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td></td>
+                                        <td>西方郡2</td>
+                                        <td>杭州市西湖区文一路99号</td>
+                                        <td>B</td>
+                                        <td>chd987676</td>
+                                        <td>特惠活动1;特惠活动2;特惠活动3;</td>
+                                        <td>是</td>
+                                        <td>
+                                            <a href="民生楼盘属性.html" class="btn btn-white btn-bitbucket">合作属性维护</a>
+                                            <a href="" class="btn btn-white btn-bitbucket">撤销推荐</a>
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td></td>
+                                        <td>东方郡3</td>
+                                        <td>杭州市西湖区文一路99号</td>
+                                        <td>D</td>
+                                        <td>chd987676</td>
+                                        <td>--</td>
+                                        <td>否</td>
+                                        <td>
+                                            <a href="民生楼盘属性.html" class="btn btn-white btn-bitbucket">合作属性维护</a>
+                                            <a href="" class="btn btn-white btn-bitbucket">首页推荐</a>
+                                        </td>
+                                    </tr>
+                                    
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <a href="民生推荐楼盘.html">民生推荐:未推荐结构同已推荐相似，结构看看原型图</a>   
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/content.min.js"></script>
+<script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+<script src="js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/demo/bootstrap-table-demo.min.js"></script>
+</body>
+</html>

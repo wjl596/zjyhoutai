@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>筑家易后台管理系统</title>
+    <meta name="keywords" content="筑家易后台管理系统">
+    <meta name="description" content="筑家易后台管理系统">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+</head>
+<body class="gray-bg">
+<style type="text/css">
+.tb-title th{text-align:center;}
+.form-style .control-label{padding-right: 5px;padding-left: 16px;width: auto}
+</style>
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5><a href="">推广</a> > 推广人管理</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="row form-group form-horizontal form-style">
+                        <div class="col-sm-2" style="padding-left: 0"><input type="text" id="keyword" value="" name="keyword" placeholder="推广人代号" class="form-control"></div>
+                        <div class="col-sm-2" style="padding-left: 0"><input type="text" id="keyword" value="" name="keyword" placeholder="推广人名称" class="form-control"></div>
+                        <div class="col-sm-1" style="padding:0;"><button type="submit" class="btn btn-primary">查询</button></div>
+                        <div class="col-sm-1" style="padding:0;"><a href="推广人新增.html" class="btn btn-primary">新增</a></div>
+                    </div>
+                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                        <thead>
+                            <tr class="tb-title">
+                                <th>推广人代号</th>
+                                <th>推广人名称</th>
+                                <th>手机号码</th>
+                                <th>状态</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr align="center">
+                                <td>tf</td>
+                                <td>团房网</td>
+                                <td>123456789</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="" class="btn btn-outline btn-default">编辑</a>
+                                </td>
+                            </tr>
+                            <tr align="center">
+                                <td>wx</td>
+                                <td>微信楼盘</td>
+                                <td>987654321</td>
+                                <td>停用</td>
+                                <td>
+                                    <a href="" class="btn btn-outline btn-default">编辑</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label"><span class="text-danger">业务规则：</span></label>
+                        <div class="col-sm-10">
+                            <label class="control-label"><span class="text-danger">
+                                1、推广人名称、推广人代码内容唯一，推广人名称：内容不限，最长50个字符
+                                <br>推广人代码：不允许中文，最长10个字符；
+                                <br>2、新增推广人时，默认状态为启用；
+                                <br>目前在业务规则里启用与停用仅作为标签标识；
+                            </span></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/content.min.js"></script>
+<script src="js/plugins/dataTables/jquery.dataTables.js"></script>
+<script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+<script>
+    // table
+    $(".dataTables-example").dataTable();
+</script>
+</body>
+</html>

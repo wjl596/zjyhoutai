@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>筑家易后台管理系统</title>
+    <meta name="keywords" content="筑家易后台管理系统">
+    <meta name="description" content="筑家易后台管理系统">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<!-- Data Tables -->
+    <link href="css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body class="gray-bg">
+<style type="text/css">
+.tb-title th{text-align:center;}
+.form-style .control-label{padding-right: 5px;padding-left: 16px;width: auto}
+</style>
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5><a href="">推广</a> > 推广源统计</h5>
+                </div>
+                <div class="ibox-content">
+            		<div class="row form-group form-horizontal form-style">
+                        <label class="col-sm-1 control-label">日期：</label>
+						<div class="col-sm-4" style="padding: 0;width:30%;">
+							<div class="col-sm-5" style="padding: 0;">
+								<input type="text" name="start_deal_time" class="form-control layer-date laydate-icon" value="">
+							</div>
+							<label class="col-sm-1 control-label time-interval" style="text-align:center;">到</label>
+							<div class="col-sm-5" style="padding: 0;">
+								<input type="text" name="end_deal_time" class="form-control layer-date laydate-icon" value="">
+							</div>
+						</div>
+						<div class="col-sm-2" style="padding-left: 0">
+                            <select class="form-control" name="account">
+                                <option value="1">推广人：全部</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="keyword" value="" name="keyword" placeholder="推广源名称" class="form-control">
+                        </div>
+                        <div class="col-sm-1" style="padding:0;"><button type="submit" class="btn btn-primary">查询</button></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10" style="padding:0;">
+                            <button class="btn btn-white btn-bitbucket" type="submit">今日</button>
+                            <button class="btn btn-white btn-bitbucket" type="submit">昨日</button>
+                            <button class="btn btn-white btn-bitbucket" type="submit">本周</button>
+                            <button class="btn btn-white btn-bitbucket" type="submit">上周</button>
+                            <button class="btn btn-white btn-bitbucket" type="submit">本月</button>
+                            <button class="btn btn-white btn-bitbucket" type="submit">上月</button>
+                        </div>
+                    </div>
+                    <table class="table table-striped table-bordered table-hover dataTables-example">
+                        <thead>
+                            <tr class="tb-title">
+                                <th>用户姓名</th>
+                                <th>手机号码</th>
+                                <th>楼盘名称</th>
+                                <th>推广人代码</th>
+                                <th>推广人名称</th>
+                                <th>推广源</th>
+                                <th>来源</th>
+                                <th>报名时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr align="center">
+                                <td>姓名</td>
+                                <td>13396546785</td>
+                                <td>楼盘名称</td>
+                                <td></td>
+                                <td></td>
+                                <td>baid</td>
+                                <td>筑家易APP</td>
+                                <td>2016-11-11 12：30：56</td>
+                            </tr>
+                            <tr align="center">
+                                <td>姓名</td>
+                                <td>13396546785</td>
+                                <td>楼盘名称</td>
+                                <td></td>
+                                <td></td>
+                                <td>baid</td>
+                                <td>官网PC端</td>
+                                <td>2016-11-11 12：30：56</td>
+                            </tr>
+                            <tr align="center">
+                                <td>姓名</td>
+                                <td>13396546785</td>
+                                <td>楼盘名称</td>
+                                <td></td>
+                                <td></td>
+                                <td>baid</td>
+                                <td>官网手机端</td>
+                                <td>2016-11-11 12：30：56</td>
+                            </tr>
+                            <tr align="center">
+                                <td>姓名</td>
+                                <td>13396546785</td>
+                                <td>楼盘名称</td>
+                                <td></td>
+                                <td></td>
+                                <td>baid</td>
+                                <td>团房PC端</td>
+                                <td>2016-11-11 12：30：56</td>
+                            </tr>
+                            <tr align="center">
+                                <td>姓名</td>
+                                <td>13396546785</td>
+                                <td>楼盘名称</td>
+                                <td></td>
+                                <td></td>
+                                <td>baid</td>
+                                <td>团房手机端</td>
+                                <td>2016-11-11 12：30：56</td>
+                            </tr>
+                            <tr align="center">
+                                <td>姓名</td>
+                                <td>13396546785</td>
+                                <td>楼盘名称</td>
+                                <td></td>
+                                <td></td>
+                                <td>baid</td>
+                                <td>惠百客手机端</td>
+                                <td>2016-11-11 12：30：56</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 全局js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/dataTables/jquery.dataTables.js"></script>
+<script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+<script src="js/content.min.js"></script>
+<!-- 自定义js -->
+<script src="js/plugins/layer/laydate/laydate.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function(){
+        // layer-date 日期插件全局配置
+        $(".layer-date").on("click", function(){
+            laydate({
+                istime:false,
+                format:"YYYY-MM-DD"
+            });
+        });
+        // table
+        $(".dataTables-example").dataTable();
+    });
+</script>
+</body>
+</html>
